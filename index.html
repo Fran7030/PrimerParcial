@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Parcial</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        <h1>Franklin Rojas <span>Primer Parcial</span></h1>
+    </header>
+    <section class="navegacion">
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Inicio</a>
+            <a href="acerca.html">Acerca de mi</a>
+            <a href="contactame.html">Cont&aacute;ctame</a>
+        </div>
+
+        <button class="openbtn" onclick="openNav()">&#9776; Men&uacute;</button>
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "20rem";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+            }
+        </script>
+    </section> <!-- Termina el menu de navegacion -->
+    
+        <ul class="breadcrumb">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acerca.html">Acerca de mi</a></li>
+            <li> <a href="contactame.html">Cont&aacute;ctame</a></li>
+        </ul>
+   
+
+    <main class="contenedor">
+        <div class="hero">
+            <div class="contenido-hero">
+                <h2>Interfaces Graficas</h2>
+                <p><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88"
+                        height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <circle cx="12" cy="11" r="3" />
+                        <path
+                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
+                    </svg>Cartago, Costa Rica</p>
+                <a class="boton" href="contactame.html">Contactar</a>
+            </div>
+        </div>
+    </main>
+
+    <section class="peqdescripcion">
+        <img src="img/perfil1.jpg">
+        <p>
+            Desarrollador de software bilingüe con experiencia en aplicaciones web.
+            No solo tengo conocimientos en SQL, PHP, HTML, CSS, Python, Java y Git. 
+            Deseo formar parte de su empresa para generar funcionales que superen las expectativas de los clientes de la empresa.
+        </p>
+    </section>
+
+    <footer class="footer">
+        <p class="footer_texto">Todos los derechos reservados. Franklin Rojas <span>2021</span></p>
+    </footer>
+</body>
+
+</html>

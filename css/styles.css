@@ -1,0 +1,328 @@
+:root {
+        --primario: #FFC107;
+        --secundario: #0097A7;
+        --blanco: #FFF;
+        --negro: #000;
+        --gris: #444;
+        --grisClaro: #f1f1f1;
+    
+        --fuentePrincipal: 'Oswald', sans-serif;
+        --fuenteSecundaria: 'Yantramanav', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* Globales */
+body {
+    background-image: linear-gradient(to top, #FFCCCC 0%, #CCFFE5 100%);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+p {
+    font-size: 1.8rem;
+    font-family: var(--fuenteSecundaria);
+    font-weight: 700;
+    color: var(--negro);
+}
+img {
+    width: 100%;
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+}
+h1 {
+    font-size: 4rem;
+}
+h1 span {
+    font-size: 1.4rem;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    color: var(--secundario);
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+.contenedor {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+/* Header */
+.header {
+    display: flex;
+   justify-content: center;
+    word-spacing: 1rem;
+}
+.header span {
+    font-size: 2rem;
+    word-spacing: 0.4rem;
+}
+/* Footer */
+.footer {
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+    text-align: center;
+    background-color: var(--secundario);
+}
+.footer__texto {
+    font-family: var(--fuenteSecundaria);
+    font-size: 2.2rem;
+}
+.footer span {
+    font-size: 1.3rem;
+}
+/* Navegacion */
+
+
+.navegacion .sidepanel {
+    height: 250px; 
+    width: 0; 
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--negro); 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  .navegacion .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--grisClaro);
+    display: block;
+    transition: 0.3s;
+  }
+  .navegacion .sidepanel a:hover {
+    color: var(--grisClaro);
+  }
+  .navegacion .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .navegacion .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: var(--blanco);
+    padding: 10px 15px;
+    border: none;
+  }
+  .navegacion .openbtn:hover {
+    background-color: var(--gris);
+  }
+  /* Hero */
+  @media (min-width: 750px) {
+      .hero {
+    height: 450px;
+    background-image: url(../img/hero.jpg);
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+}
+@media (min-width: 468px) {
+    .hero {
+        height: 450px;
+        width: 100%;
+        background-image: url(../img/hero.jpg);
+        margin-bottom: 2rem;
+        position: relative;
+
+}
+}
+
+.contenido-hero {
+    background-color: rgb(0 0 0 / 70%); /** Otra opción **/
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.contenido-hero h2, 
+.contenido-hero p {
+    color: var(--blanco);
+}
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    margin-top: .5rem;
+    padding: .5rem 3rem;
+    border-radius: 5px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border:none;
+}
+.boton:hover{
+    cursor: pointer;
+}
+/* peqdescripcion */
+.peqdescripcion {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.peqdescripcion img{
+    height: 400px;
+    width: 250px; 
+    margin-bottom: 2rem; 
+    border-radius: 2rem;
+}
+.peqdescripcion p{
+    text-align: center;
+    font-size: 2rem;
+
+}
+/* Formulario */
+.formulario {
+    background-color: var(--gris);
+    padding: 2rem;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--primario);
+    margin-bottom: 2rem;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+@media (min-width:768px) {
+    .formulario {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+.contenedor-campos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.campo {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+@media (min-width:480px) {
+    .campo {
+        display: flex;
+        align-items: center;
+    }
+}
+@media (min-width: 768px) {
+    .campo{
+        flex: 0 0 calc(50% - .5rem)
+    }
+}
+.campo label {
+    color: var(--blanco);
+    font-weight: 700;
+    margin-bottom: .5rem;
+    display: block;
+}
+@media (min-width:480px) {
+    .campo label {
+        flex: 0 0 90px;
+    }
+}
+.campo input[type="text"],
+.campo input[type="tel"],
+.campo input[type="mail"],
+.campo textarea {
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius: .5rem;
+}
+@media (min-width: 768px) {
+    :is(.campo) :is( 
+        input[type="text"], 
+        input[type="text"],  
+        input[type="tel"],  
+        input[type="mail"] , 
+        textarea ) {
+        flex: 1;
+    }
+}
+
+.w-100{
+    flex: 0 0 100%;
+}
+.campo textarea {
+    height: 4rem;
+}
+
+.enviar {
+    display: flex;
+    justify-content: flex-end;
+}
+/* Breadcrumb */
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: var(--primario);
+  } 
+
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  } 
+
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+  /* Acerca  */
+  .principal {
+      text-align: center;
+  }
+  /* Iconos acerca */
+  .iconos {
+      display: flex;
+      
+      justify-content: center;
+      gap: 2rem;
+  }
+
