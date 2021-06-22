@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Parcial</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Franklin Rojas <span>Primer Parcial</span></h1>
+    </header>
+    <section class="navegacion">
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Inicio</a>
+            <a href="acerca.html">Acerca de mi</a>
+            <a href="contactame.html">Cont&aacute;ctame</a>
+        </div>
+       
+
+        <button class="openbtn" onclick="openNav()">&#9776; Men&uacute;</button>
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "20rem";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+            }
+        </script>
+    </section> <!-- Termina el menu de navegacion -->
+    <ul class="breadcrumb">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acerca.html">Acerca de mi</a></li>
+        <li> <a href="contactame.html">Cont&aacute;ctame</a></li>
+      </ul>
+    
+    <div class="principal">
+        <section class="descripcion">
+            <hgroup>
+                <div>
+                    <H2 class="yo">&#191;Qui&eacute;n soy? </H2>
+                    <p>
+                        ¡Hola! Mi nombre es Franklin, soy de un pueblo a 30 kilómetros del Centro de Cartago. Soy un apasionado por la tecnología y la investigación.
+                        Me encanta practicar deportes, he practicado taekwondo desde que tengo 6 años, he participado en campeonatos nacionales y algunos internacionales.
+                        Amante de los animales y la naturaleza.
+
+                    </p>
+                    <h2 class="pasatiempos">Pasatiempos</h2>
+                    <p>
+                        Me interesé más en los pasatiempos y empecé a emplear más tiempo en ellos. 
+                        Así que comencé a probar otros deportes como el basquetbol y el voleibol. 
+                        También, me gusta practicar yoga, algunos deportes extremos como motocross, de igual manera me gustan los deportes de resistencia como lo es
+                        ciclismo,  atletismo y natación.
+                    </p>
+                </div>
+
+            </hgroup>
+        </section>
+        <section class="educacion">
+            <h2>Educaci&oacute;n</h2>
+            <p>
+                Actualmente, me encuentro terminando el bachiller en ingeniería informática, con mas de 36 materias aprobadas. Soy una persona autodidacta, por lo cual tengo certificaciones en varios temas relacionados a la tecnología, como lo son: bases de datos, desarrollo de paginas web, desarrollo de aplicaciones, E-commerce, entre otros.
+            </p>
+        </section>
+        <section class="conocimientos">
+            <h2>Conocimientos</h2>
+            <div class="iconos">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-python" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 9h-7a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h3" />
+                    <path d="M12 15h7a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-3" />
+                    <path d="M8 9v-4a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v5a2 2 0 0 1 -2 2h-4a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h4a2 2 0 0 0 2 -2v-4" />
+                    <line x1="11" y1="6" x2="11" y2="6.01" />
+                    <line x1="13" y1="18" x2="13" y2="18.01" />
+                  </svg>
+                  <p>Python</p>
+            </div>
+            <div class="iconos">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                    <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                  </svg>
+                  <p>HTML</p>
+            </div>
+
+        </section>
+        <section class="experiencia">
+            <h2>Experiencia</h2>
+            <p>
+                Ayudando voluntariamente a una empresa de nueva creación aún no financiada para desarrollar su producto, con fines de autoeducación. Me trabajo incluye codificación en Javascript (Backbone, jQuery, Underscore), HTML y CSS
+            </p>
+        </section>
+    </div>
+    <footer class="footer">
+        <p class="footer_texto">Todos los derechos reservados. Franklin Rojas <span>2021</span></p>
+    </footer>
+</body>
+
+</html>

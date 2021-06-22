@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Parcial</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Franklin Rojas <span>Primer Parcial</span></h1>
+    </header>
+    <section class="navegacion">
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Inicio</a>
+            <a href="acerca.html">Acerca de mi</a>
+            <a href="contactame.html">Cont&aacute;ctame</a>
+        </div>
+       
+
+        <button class="openbtn" onclick="openNav()">&#9776; Men&uacute;</button>
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "20rem";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+            }
+        </script>
+    </section> <!-- Termina el menu de navegacion -->
+     <ul class="breadcrumb">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acerca.html">Acerca de mi</a></li>
+            <li> <a href="contactame.html">Cont&aacute;ctame</a></li>
+          </ul>
+    <div id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-sm">
+                    <form class="formulario" method="post">
+                        <fieldset>
+                            <legend>Contact&aacute;nos</legend>
+                            <div class="contenedor-campos">
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i
+                                            class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <label>Nombre</label>
+                                        <input id="fname" name="name" type="text" placeholder="Nombre" required>
+                                    </div>
+                                </div>
+                                <div class="campo"> <span class="col-md-1 col-md-offset-2 text-center"><i
+                                            class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <label>Apellido</label>
+                                        <input id="lname" name="name" type="text" placeholder="Apellido" required>
+                                    </div>
+                                </div>
+
+                                <div class="campo"> <span class="col-md-1 col-md-offset-2 text-center"><i
+                                            class="fa fa-phone-square bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <label>Telefono</label>
+                                        <input id="phone" name="phone" type="text" placeholder="Telefono" required>
+                                    </div>
+                                </div>
+
+                                <div class="campo w-100"> <span class="col-md-1 col-md-offset-2 text-center"><i
+                                            class="fa fa-envelope-o bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <label>Correo</label>
+                                        <input id="email" name="email" type="text" placeholder="Correo" required>
+                                    </div>
+                                </div>
+
+                                <div class="campo"> 
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                    <div class="campo w-100">
+                                        <label>Asunto</label>
+                                        <textarea class="form-control" id="message" name="message" placeholder="Ingrese el asunto aqui" rows="7"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="enviar">
+                                <input class="boton" type="submit" value="Enviar"> </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <p class="footer_texto">Todos los derechos reservados. Franklin Rojas <span>2021</span></p>
+    </footer>
+</body>
+
+</html>
